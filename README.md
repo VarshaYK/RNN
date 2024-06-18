@@ -68,7 +68,10 @@ Using the assigned integers, the sentence "I love cats" would be converted into 
 RNNs and other neural networks require numerical input. Integer encoding provides a straightforward way to convert text to numbers.
 Simplicity: It is a simple and effective method for small vocabularies or preliminary text processing.
 
-#### Limitations:
+#### Simplicity: 
+It is a simple and effective method for small vocabularies or preliminary text processing.
+
+### Limitations:
 
 
 ##### No Semantic Meaning: 
