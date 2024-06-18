@@ -22,7 +22,7 @@ In sequential data, the meaning of a data point often depends on its context wit
 # Recurrent Neural Networks (RNNs)
 RNNs are designed to handle sequential data by maintaining a hidden state that gets updated as the model processes each data point in the sequence. This hidden state acts as a memory of previous data points, allowing the model to maintain temporal dependencies.
 
-# Integer Encoding
+##   Integer Encoding
 
 Integer encoding is a method used to convert categorical data, such as words, into numerical form so that they can be used in machine learning models
 
