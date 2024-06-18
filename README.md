@@ -28,11 +28,22 @@ Integer encoding is a method used to convert categorical data, such as words, in
 
 
 What is Integer Encoding?
-Categorical Data: In the context of Natural Language Processing (NLP), categorical data often refers to words or tokens in text data. For example, consider the sentence "I love cats."
 
-Need for Numerical Representation: Machine learning models, including RNNs, cannot directly work with text data. They require numerical inputs.
 
-Assigning Unique Integers: Integer encoding involves assigning a unique integer to each word in the vocabulary. For example:
+
+Categorical Data: 
+
+In the context of Natural Language Processing (NLP), categorical data often refers to words or tokens in text data. For example, consider the sentence "I love cats."
+
+
+Need for Numerical Representation:
+
+Machine learning models, including RNNs, cannot directly work with text data. They require numerical inputs.
+
+
+Assigning Unique Integers: 
+
+Integer encoding involves assigning a unique integer to each word in the vocabulary. For example:
 
 
 "I" -> 1
@@ -43,6 +54,8 @@ Assigning Unique Integers: Integer encoding involves assigning a unique integer 
 Conversion:
 
 Using the assigned integers, the sentence "I love cats" would be converted into [1, 2, 3].
+
+
 
 Why Use Integer Encoding?  
 
@@ -60,7 +73,7 @@ No Semantic Meaning: Integer encoding does not capture the meaning or similarity
 Fixed Vocabulary Size: The vocabulary size must be determined in advance, and new or unseen words need special handling (e.g., assigning a special integer for unknown words).
 
 
-Embeddings
+# Embeddings
 
 Embeddings in RNNs (and other neural networks) are a way to represent words as dense vectors of real numbers, which capture semantic meaning and relationships between words. This method is more sophisticated and effective than simple integer encoding. Here’s a simple explanation:
 
@@ -82,7 +95,10 @@ Capturing Meaning:
 
 These vectors are learned in such a way that words with similar meanings have similar vector representations. For instance, the vectors for "cat" and "dog" will be close to each other in the embedding space.
 
+
 Why Use Embeddings?
+
+
 Semantic Similarity: 
 
 Embeddings capture semantic relationships between words. For example, "king" and "queen" might have vectors that are close in the embedding space, reflecting their related meanings.
