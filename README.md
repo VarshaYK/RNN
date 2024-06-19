@@ -156,7 +156,9 @@ As the RNN processes the training data, it adjusts the embeddings to minimize th
 Once trained, these embeddings are used to convert words to vectors before feeding them into the RNN.
 
 
-# different types of RNNs in terms of their input-output relationships
+
+
+# Different types of RNNs in terms of their input-output relationships
 
 ## One-to-One RNN
 ### Example: 
