@@ -155,3 +155,48 @@ As the RNN processes the training data, it adjusts the embeddings to minimize th
 
 Once trained, these embeddings are used to convert words to vectors before feeding them into the RNN.
 
+
+# different types of RNNs in terms of their input-output relationships
+
+## One-to-One RNN
+### Example: 
+Recognizing handwritten digits. (or Image classification.)
+
+#### Input: 
+A single image of a handwritten digit.
+
+### Output: 
+The recognized digit (e.g., 5).
+
+## One-to-Many RNN
+
+### Example: 
+Generating music from a starting note. (or Image captioning.)
+
+#### Input: 
+A single starting note.
+
+Output: 
+A sequence of musical notes forming a melody.
+
+## Many-to-One RNN
+
+### Example: 
+Predicting the next word in a sentence. (or Sentiment analysis.)
+
+#### Input: 
+A sequence of words in a sentence (e.g., "The weather is").
+
+### Output: 
+The next word (e.g., "nice").
+
+## Many-to-Many RNN
+
+### Example: 
+Subtitling a video. (or Machine translation.)
+
+#### Input: 
+A sequence of frames from the video (many images).
+
+#### Output: 
+Corresponding subtitles (many words).
