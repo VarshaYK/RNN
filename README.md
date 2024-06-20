@@ -19,11 +19,21 @@ ANNs and CNNs typically require fixed-size inputs. This can be a limitation for 
    
 In sequential data, the meaning of a data point often depends on its context within the sequence. For example, in natural language processing, the meaning of a word can change based on the words that come before or after it. ANNs and CNNs do not inherently capture this context. While CNNs can capture some local patterns through convolutional filters, they still lack the ability to maintain long-term dependencies.
 
-![image](https://github.com/VarshaYK/RNN/assets/31321685/e63546ba-3788-4cbe-a857-3de100140cca)
-
 
 # Recurrent Neural Networks (RNNs)
 RNNs are designed to handle sequential data by maintaining a hidden state that gets updated as the model processes each data point in the sequence. This hidden state acts as a memory of previous data points, allowing the model to maintain temporal dependencies.
+
+![image](https://github.com/VarshaYK/RNN/assets/31321685/e63546ba-3788-4cbe-a857-3de100140cca)
+
+
+## How RNN differs from Feedforward Neural Network?
+
+Artificial neural networks that do not have looping nodes are called feed forward neural networks. Because all information is only passed forward, this kind of neural network is also referred to as a multi-layer neural network.
+
+Information moves from the input layer to the output layer – if any hidden layers are present – unidirectionally in a feedforward neural network. These networks are appropriate for image classification tasks, for example, where input and output are independent. Nevertheless, their inability to retain previous inputs automatically renders them less useful for sequential data analysis.
+
+![image](https://github.com/VarshaYK/RNN/assets/31321685/843d6484-1630-47c9-a762-a56c804dd1d4)
+
 
 ##   Integer Encoding
 
@@ -208,3 +218,51 @@ A sequence of frames from the video (many images).
 
 #### Output: 
 Corresponding subtitles (many words).
+
+## Training through RNN
+
+A single-time step of the input is provided to the network.
+
+Then calculate its current state using a set of current input and the previous state.
+
+The current ht becomes ht-1 for the next time step.
+
+One can go as many time steps according to the problem and join the information from all the previous states.
+
+Once all the time steps are completed the final current state is used to calculate the output.
+
+The output is then compared to the actual output i.e the target output and the error is generated.
+
+The error is then back-propagated to the network to update the weights and hence the network (RNN) is trained using Backpropagation through time.
+
+
+## Advantages and Disadvantages of Recurrent Neural Network
+
+### Advantages
+
+An RNN remembers each and every piece of information through time. 
+
+It is useful in time series prediction only because of the feature to remember previous inputs as well. This is called Long Short Term Memory.
+
+Recurrent neural networks are even used with convolutional layers to extend the effective pixel neighborhood.
+
+
+### Disadvantages
+
+Gradient vanishing and exploding problems.
+
+Training an RNN is a very difficult task.
+
+It cannot process very long sequences if using tanh or relu as an activation function.
+
+## Applications of Recurrent Neural Network
+
+Language Modelling and Generating Text
+
+Speech Recognition
+
+Machine Translation
+
+Image Recognition, Face detection
+
+Time series Forecasting
