@@ -19,6 +19,9 @@ ANNs and CNNs typically require fixed-size inputs. This can be a limitation for 
    
 In sequential data, the meaning of a data point often depends on its context within the sequence. For example, in natural language processing, the meaning of a word can change based on the words that come before or after it. ANNs and CNNs do not inherently capture this context. While CNNs can capture some local patterns through convolutional filters, they still lack the ability to maintain long-term dependencies.
 
+![image](https://github.com/VarshaYK/RNN/assets/31321685/e63546ba-3788-4cbe-a857-3de100140cca)
+
+
 # Recurrent Neural Networks (RNNs)
 RNNs are designed to handle sequential data by maintaining a hidden state that gets updated as the model processes each data point in the sequence. This hidden state acts as a memory of previous data points, allowing the model to maintain temporal dependencies.
 
@@ -159,6 +162,9 @@ Once trained, these embeddings are used to convert words to vectors before feedi
 
 
 # Different types of RNNs in terms of their input-output relationships
+
+![image](https://github.com/VarshaYK/RNN/assets/31321685/b5568c3e-1814-4c3d-8411-fd1bde9bbc77)
+
 
 ## One-to-One RNN
 ### Example: 
